@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Large-N-Charge Welcome Guide</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fafafa;color:#1a1a2e;line-height:1.7}
+.hero{background:linear-gradient(135deg,#004c3f 0%,#008060 50%,#00a87e 100%);color:#fff;padding:80px 40px 60px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:40px;background:#fafafa;border-radius:50% 50% 0 0 / 100% 100% 0 0}
+.hero h1{font-size:42px;font-weight:800;letter-spacing:-1px;margin-bottom:8px}
+.hero p{font-size:18px;opacity:0.9;max-width:600px;margin:0 auto}
+.container{max-width:800px;margin:0 auto;padding:0 24px 80px}
+.section{background:#fff;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.06);padding:36px 40px;margin-top:32px}
+.section h2{font-size:22px;font-weight:700;color:#004c3f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e8f5f0}
+.section h3{font-size:16px;font-weight:700;color:#1a1a2e;margin:20px 0 8px}
+.section p,.section li{font-size:15px;color:#374151}
+.section ul{padding-left:20px;margin:8px 0 16px}
+.section li{margin-bottom:6px}
+.section li::marker{color:#008060}
+.rule-list{list-style:none;padding:0}
+.rule-list li{padding:10px 0;border-bottom:1px solid #f3f4f6;font-size:15px;display:flex;align-items:flex-start;gap:10px}
+.rule-list li:last-child{border-bottom:none}
+.rule-list li::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:#008060;margin-top:8px;flex-shrink:0}
+.who-we-are-placeholder{background:#f0fdf4;border:2px dashed #86efac;border-radius:8px;padding:24px;text-align:center;color:#166534;font-style:italic;font-size:14px;margin-top:8px}
+.goals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+.goal-card{background:#f0fdf4;border-radius:10px;padding:20px;text-align:center}
+.goal-card .number{font-size:32px;font-weight:800;color:#008060}
+.goal-card .label{font-size:13px;color:#374151;margin-top:4px}
+.meeting-grid{display:grid;gap:10px;margin-top:12px}
+.meeting-item{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:#f9fafb;border-radius:8px;border-left:3px solid #008060}
+.meeting-item .day{font-weight:700;font-size:13px;color:#008060;min-width:80px;text-transform:uppercase}
+.meeting-item .desc{font-size:14px;color:#374151}
+.checklist{list-style:none;padding:0}
+.checklist li{padding:10px 0;border-bottom:1px solid #f3f4f6;font-size:15px;display:flex;align-items:center;gap:10px}
+.checklist li:last-child{border-bottom:none}
+.check-box{width:18px;height:18px;border:2px solid #d1d5db;border-radius:4px;flex-shrink:0}
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.link-card{display:block;padding:14px 16px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1a1a2e;transition:all 0.15s}
+.link-card:hover{border-color:#008060;background:#f0fdf4;transform:translateY(-1px);box-shadow:0 2px 8px rgba(0,128,96,0.1)}
+.link-card .link-title{font-weight:600;font-size:14px;color:#004c3f}
+.link-card .link-desc{font-size:12px;color:#6b7280;margin-top:2px}
+.link-section-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#6b7280;margin:20px 0 10px;padding-top:8px}
+.link-section-label:first-of-type{margin-top:4px}
+.highlight-box{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:14px;color:#92400e}
+.highlight-box strong{color:#78350f}
+.quote-box{background:#f0fdf4;border-left:4px solid #008060;border-radius:0 8px 8px 0;padding:16px 20px;margin:16px 0;font-size:15px;font-style:italic;color:#166534}
+.success-tiers{margin-top:12px}
+.tier{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #f3f4f6}
+.tier:last-child{border-bottom:none}
+.tier-label{font-weight:700;font-size:13px;min-width:80px;color:#008060;text-transform:uppercase}
+.tier-desc{font-size:14px;color:#374151}
+@media(max-width:640px){
+  .hero{padding:60px 24px 40px}
+  .hero h1{font-size:30px}
+  .section{padding:24px 20px}
+  .goals-grid{grid-template-columns:1fr}
+  .link-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Welcome to Large-N-Charge</h1>
+  <p>Your guide to how we work, what we stand for, and everything you need to hit the ground running.</p>
+</div>
+
+<div class="container">
+
+<!-- WHO WE ARE -->
+<div class="section">
+  <h2>Who We Are</h2>
+  <div class="who-we-are-placeholder">
+    This section is coming soon — team activity to define how we want to be identified.
+  </div>
+</div>
+
+<!-- OUR TEAM RULES -->
+<div class="section">
+  <h2>Our Team Rules</h2>
+  <ul class="rule-list">
+    <li><strong>GSD</strong> — whether you think you can or you can't, you're right.</li>
+    <li>We collaborate and support each other.</li>
+    <li>You are an individual contributor, yes — but we are accountable to our <strong>team</strong>.</li>
+    <li>No negative talk — it's okay to have imposter syndrome, but let's talk through it and not poison ourselves.</li>
+    <li>Don't compare yourself to others; only compare yourself to yesterday's you.</li>
+    <li>Communicate, communicate, communicate.</li>
+    <li>You don't get what you don't ask for.</li>
+  </ul>
+</div>
+
+<!-- OPERATING EXPECTATIONS -->
+<div class="section">
+  <h2>Operating Expectations</h2>
+
+  <h3>Communication</h3>
+  <p>Over-communicate. If you're not sure — ask. Tell. Don't sit on it. We have hundreds of resources to find answers, but you can always come to your manager. Stay up to date on Slack and emails — a ton of important information lives in our Slack channels.</p>
+
+  <h3>Punctuality</h3>
+  <p>Do not be late to meetings. Punctuality is incredibly important to me and our team. Do recognize we're human though — sometimes things come up. Message your manager <strong>before</strong> the meeting starts if that's the case, not after.</p>
+
+  <h3>Availability</h3>
+  <p>My expectation is you're online from <strong>8:30 AM – 5:00 PM</strong> in your time zone. Be present, be responsive.</p>
+
+  <h3>Professionalism</h3>
+  <p>Be professional and appropriate in every interaction — internal and external. You represent the team.</p>
+
+  <h3>Time Off</h3>
+  <p>Take time off — seriously, take it. But plan ahead:</p>
+  <ul>
+    <li><strong>Extended time (5+ days):</strong> 1 month notice</li>
+    <li><strong>Short time (4 days or less):</strong> 1–2 weeks notice</li>
+    <li>Before submitting, run it by me for approval first</li>
+  </ul>
+</div>
+
+<!-- WORKING WITH KATE -->
+<div class="section">
+  <h2>Working with Kate</h2>
+  <p>My job is to remove blockers, coach you, and fight for you behind the scenes. Here's how I operate:</p>
+
+  <h3>Communication Style</h3>
+  <p>If something needs fixing, I'll tell you — not to be harsh, but because I respect you enough to be honest. I expect the same back.</p>
+
+  <h3>How I Give Feedback</h3>
+  <p>Mostly in our 1:1s, sometimes in real-time over Slack if it's urgent. I won't save up feedback to surprise you — if there's an issue, you'll know quickly.</p>
+
+  <h3>What I Need from You in 1:1s</h3>
+  <p>Come prepared. Bring your wins, your blockers, your questions. Don't make me pull it out of you — our time together is yours to use.</p>
+
+  <h3>Escalation</h3>
+  <p>If you have concerns about comp, team dynamics, workload, or anything else — bring it to me first. I will always advocate for you, but I can't do that if I'm hearing about it secondhand. If I can't solve it, we'll escalate together.</p>
+</div>
+
+<!-- MEETING CADENCE -->
+<div class="section">
+  <h2>Meeting Cadence</h2>
+  <div class="meeting-grid">
+    <div class="meeting-item">
+      <span class="day">Weekly</span>
+      <span class="desc"><strong>1:1 with Kate</strong> — your time. Come prepared with updates, blockers, and asks.</span>
+    </div>
+    <div class="meeting-item">
+      <span class="day">Monday</span>
+      <span class="desc"><strong>Kick-off Calls</strong> — forecasting and calling your shot for the week.</span>
+    </div>
+    <div class="meeting-item">
+      <span class="day">Tuesday</span>
+      <span class="desc"><strong>Tips &amp; Tricks / Call Block</strong> — hour-long session dedicated to making dials as a team and sharing best practices.</span>
+    </div>
+    <div class="meeting-item">
+      <span class="day">Thursday</span>
+      <span class="desc"><strong>Office Hours</strong> — your time to get live feedback and support from your manager. If you're pacing behind or running into obstacles, I highly suggest using this time.</span>
+    </div>
+    <div class="meeting-item">
+      <span class="day">Friday</span>
+      <span class="desc"><strong>EOW Syncs</strong> — run through forecast, see where we land across goals.</span>
+    </div>
+    <div class="meeting-item">
+      <span class="day">Ongoing</span>
+      <span class="desc"><strong>AE Syncs</strong> — meet with your AE partner regularly to align on accounts and strategy.</span>
+    </div>
+  </div>
+</div>
+
+<!-- DAILY GOALS -->
+<div class="section">
+  <h2>Daily Goals</h2>
+  <p>Activity is the engine. These are your daily targets:</p>
+  <div class="goals-grid">
+    <div class="goal-card">
+      <div class="number">35</div>
+      <div class="label">Dials per day</div>
+    </div>
+    <div class="goal-card">
+      <div class="number">15–20</div>
+      <div class="label">New contacts added to CRM daily</div>
+    </div>
+    <div class="goal-card">
+      <div class="number">70–80</div>
+      <div class="label">Written touchpoints per day<br><small>(25% hyper-personalized)</small></div>
+    </div>
+  </div>
+
+  <h3>What Does Hyper-Personalization Mean?</h3>
+  <ul>
+    <li><strong>Start with the trigger:</strong> Mention the specific action or news that prompted the outreach — show you've done your homework.</li>
+    <li><strong>Lead with pain:</strong> Address a challenge relevant to their situation, not a feature list.</li>
+    <li><strong>Personalize heavily:</strong> Use their name, role, and specific context from their LinkedIn, socials, etc. This is not a bulk blast.</li>
+    <li><strong>Keep it conversational:</strong> Professional but human. If it sounds like a robot or AI wrote it, rewrite it.</li>
+    <li><strong>Clear CTA:</strong> End with a specific, low-friction ask — not "let me know."</li>
+  </ul>
+</div>
+
+<!-- HOW SUCCESS IS MEASURED -->
+<div class="section">
+  <h2>How Success Is Measured</h2>
+
+  <div class="highlight-box">
+    <strong>Your base salary pays for the effort</strong> — the calls, the emails, the research, booking meetings. That's the job.<br><br>
+    <strong>Commission is tied to outcomes</strong> — meetings that convert to real pipeline and move forward for the business. A meeting that doesn't go to the next steps doesn't generate revenue, and we can't validate getting paid for that.
+  </div>
+
+  <div class="success-tiers">
+    <div class="tier">
+      <span class="tier-label">Daily</span>
+      <span class="tier-desc">Hitting your activity targets (dials, contacts, touchpoints)</span>
+    </div>
+    <div class="tier">
+      <span class="tier-label">Weekly</span>
+      <span class="tier-desc">Meetings booked, meeting quality, CRM hygiene</span>
+    </div>
+    <div class="tier">
+      <span class="tier-label">Monthly</span>
+      <span class="tier-desc">Pipeline generated, conversion rates, account progression</span>
+    </div>
+    <div class="tier">
+      <span class="tier-label">Quarterly</span>
+      <span class="tier-desc">Quota attainment, contribution to team goals</span>
+    </div>
+  </div>
+
+  <div class="quote-box">
+    What separates good from great: Good hits their numbers. Great hits their numbers AND brings quality — the right accounts, the right contacts, meetings that actually convert. Be great.
+  </div>
+</div>
+
+<!-- AE/SDR PARTNERSHIP -->
+<div class="section">
+  <h2>AE/SDR Partnership</h2>
+  <p>This is one of the most important relationships you have. When it works, you both win. When it doesn't, everyone feels it.</p>
+
+  <h3>Your Role</h3>
+  <p>Source and qualify opportunities, book meetings, set your AE up for success with context and research.</p>
+
+  <h3>Their Role</h3>
+  <p>Run the deal, close the business, loop you in on progress.</p>
+
+  <h3>How to Show Up</h3>
+  <ul>
+    <li>Reference the <a href="https://docs.google.com/presentation/d/1zOFWl_bjr8k1OFcJqL_kSONIGBXYktE9Sk9Vy-pIM1s/edit" target="_blank">Strengthening AE/SDR Partnership</a> slide deck</li>
+    <li>Sync with your AE regularly — don't let them find out about a meeting from a calendar invite with no context</li>
+    <li>Share what you're hearing from prospects — intel is gold</li>
+    <li>After a meeting, follow up together on next steps</li>
+    <li>If something isn't working with your AE, tell me — don't let it fester</li>
+  </ul>
+</div>
+
+<!-- ACCOUNT MANAGEMENT -->
+<div class="section">
+  <h2>Account Management</h2>
+  <p>You own your book. That means:</p>
+  <ul>
+    <li><strong>Prioritize ruthlessly</strong> — High and Medium tier accounts get your best effort first. Don't spread yourself thin chasing low-priority accounts when your top accounts are going stale.</li>
+    <li><strong>CRM hygiene is non-negotiable</strong> — log your calls, update touchpoints, keep notes current. If it's not in CRM, it didn't happen.</li>
+    <li><strong>Stale accounts are a problem</strong> — if an account hasn't been touched in 30+ days, that's on you. Know your book, work your book.</li>
+    <li><strong>Know when to push and when to move on</strong> — not every account is going to convert right now. Be strategic about where you spend your time.</li>
+  </ul>
+</div>
+
+<!-- CAREER GROWTH -->
+<div class="section">
+  <h2>Career Growth</h2>
+  <p>It's never too early to think about your next steps.</p>
+
+  <h3>What I Look For When Advocating for Promotions</h3>
+  <ul>
+    <li><strong>Consistent performance against targets</strong> — not one good quarter, sustained excellence</li>
+    <li><strong>Quality of work, not just volume</strong> — are your meetings converting? Are AEs happy with meetings you're bringing to them?</li>
+    <li><strong>Ownership mentality</strong> — do you solve problems or just flag them?</li>
+    <li><strong>Team impact</strong> — are you making the people around you better?</li>
+    <li><strong>Coachability</strong> — do you take feedback and actually apply it?</li>
+  </ul>
+
+  <div class="quote-box">
+    If you want to grow, tell me. Don't wait for me to bring it up. We'll build a plan together.
+  </div>
+</div>
+
+<!-- TEAM RITUALS -->
+<div class="section">
+  <h2>Team Rituals</h2>
+  <ul class="rule-list">
+    <li><strong>Wins get celebrated</strong> — share them in the team channel, shout out your teammates.</li>
+    <li><strong>Learnings get shared</strong> — if you found something that works, don't gatekeep it.</li>
+    <li><strong>We compete with each other AND cheer for each other</strong> — both things can be true.</li>
+  </ul>
+</div>
+
+<!-- GETTING SET UP -->
+<div class="section">
+  <h2>Getting Set Up</h2>
+  <p>Before your first day of outreach, make sure you have:</p>
+  <ul class="checklist">
+    <li><span class="check-box"></span>Email configured with applied email filters</li>
+    <li><span class="check-box"></span>LinkedIn Sales Navigator (check for your welcome email/invite)</li>
+    <li><span class="check-box"></span>CRM Hub access — can you see your accounts?</li>
+    <li><span class="check-box"></span>Calendar built out with time blocks for dials, email, research, and admin</li>
+    <li><span class="check-box"></span>AE intro scheduled</li>
+  </ul>
+  <div class="highlight-box">
+    Organization is key to efficient operating cadences — block your time, protect your selling hours, and don't let admin eat your day.
+  </div>
+</div>
+
+<!-- RESOURCES & LINKS -->
+<div class="section">
+  <h2>Resources &amp; Links</h2>
+
+  <div class="link-section-label">Core</div>
+  <div class="link-grid">
+    <a class="link-card" href="https://vault.shopify.io/crm" target="_blank">
+      <div class="link-title">CRM Hub</div>
+      <div class="link-desc">Your home base — accounts, contacts, sequences, dialer, and email</div>
+    </a>
+    <a class="link-card" href="https://docs.google.com/document/d/1I1wtZv3eqJIwm_1ILCmCEdi5ql8MpX-XcwcKfLhE0r0/edit" target="_blank">
+      <div class="link-title">CRM Hub User Guide</div>
+      <div class="link-desc">How-tos for sequences, dialer, email, contacts, and accounts</div>
+    </a>
+    <a class="link-card" href="https://vault.shopify.io/docs/craft/18772-Commercial/Revenue-Tech-Workflows/Lead-Management-in-Salesforce" target="_blank">
+      <div class="link-title">Lead Management Workflows</div>
+      <div class="link-desc">Lead routing, status updates, and conversion to contacts in Salesforce</div>
+    </a>
+    <a class="link-card" href="https://vault.shopify.io/docs/craft/18772-Commercial/Revenue-Tech-Workflows/Salesforce-Duplicate-Accounts-Quick-Reference-Guide" target="_blank">
+      <div class="link-title">Revenue Tech Workflows</div>
+      <div class="link-desc">Salesforce account creation, duplicates, hierarchy, and prioritization</div>
+    </a>
+    <a class="link-card" href="https://docs.google.com/presentation/d/1zOFWl_bjr8k1OFcJqL_kSONIGBXYktE9Sk9Vy-pIM1s/edit" target="_blank">
+      <div class="link-title">AE/SDR Partnership Deck</div>
+      <div class="link-desc">Framework for building a strong AE/SDR working relationship</div>
+    </a>
+    <a class="link-card" href="https://docs.google.com/document/d/19vmlzHuhcz8BkooUAWyUci1Dl41oQUfK6HuWSxkNXvY/edit" target="_blank">
+      <div class="link-title">LinkedIn Sales Navigator Guide</div>
+      <div class="link-desc">Pilot guide — tips for multi-threading and finding new stakeholders</div>
+    </a>
+  </div>
+
+  <div class="link-section-label">Prospecting &amp; Account Research</div>
+  <div class="link-grid">
+    <a class="link-card" href="https://smokesignals.quick.shopify.io" target="_blank">
+      <div class="link-title">Smoke Signals</div>
+      <div class="link-desc">Signal-based account prioritization — news, financials, and personnel changes for your BoB</div>
+    </a>
+    <a class="link-card" href="https://sdr-pov-generator.quick.shopify.io/" target="_blank">
+      <div class="link-title">SDR POV Generator</div>
+      <div class="link-desc">Generate personalized points of view for outreach to specific accounts</div>
+    </a>
+    <a class="link-card" href="https://qualifier-app.quick.shopify.io/" target="_blank">
+      <div class="link-title">Qualifier App</div>
+      <div class="link-desc">Quickly qualify accounts and surface key data points for outreach</div>
+    </a>
+    <a class="link-card" href="https://techstacks.quick.shopify.io" target="_blank">
+      <div class="link-title">TechStacks</div>
+      <div class="link-desc">Research a prospect's current technology stack and platform</div>
+    </a>
+    <a class="link-card" href="https://se-ntral.quick.shopify.io" target="_blank">
+      <div class="link-title">SE-NTRAL</div>
+      <div class="link-desc">Central deal and track management — pipeline, directory, and merchant research</div>
+    </a>
+    <a class="link-card" href="https://company-finder.quick.shopify.io" target="_blank">
+      <div class="link-title">Company Finder</div>
+      <div class="link-desc">Find and research companies for prospecting</div>
+    </a>
+  </div>
+
+  <div class="link-section-label">AI Tools &amp; Coaching</div>
+  <div class="link-grid">
+    <a class="link-card" href="https://sdrkb.quick.shopify.io" target="_blank">
+      <div class="link-title">SDR Knowledge Base</div>
+      <div class="link-desc">Quick-reference knowledge base for merchant discovery calls</div>
+    </a>
+    <a class="link-card" href="https://nudge.quick.shopify.io" target="_blank">
+      <div class="link-title">Nudge</div>
+      <div class="link-desc">Live AI call coaching — real-time prompts and suggestions during Google Meet calls</div>
+    </a>
+    <a class="link-card" href="https://sales-command-center.quick.shopify.io/" target="_blank">
+      <div class="link-title">Sales Command Center</div>
+      <div class="link-desc">Central hub for sales intelligence and account insights</div>
+    </a>
+    <a class="link-card" href="https://siteaudit.quick.shopify.io" target="_blank">
+      <div class="link-title">Site Audit</div>
+      <div class="link-desc">Run a quick audit on a prospect's website to surface talking points</div>
+    </a>
+    <a class="link-card" href="https://strategic-prospect-planner.quick.shopify.io" target="_blank">
+      <div class="link-title">Strategic Prospect Planner</div>
+      <div class="link-desc">Build structured account plans for high-priority prospects</div>
+    </a>
+    <a class="link-card" href="https://github.com/shopify-playground/meddpicc-sales-coach" target="_blank">
+      <div class="link-title">MEDDPICC Sales Coach</div>
+      <div class="link-desc">AI-powered coaching on the MEDDPICC qualification framework</div>
+    </a>
+  </div>
+
+  <div class="link-section-label">Enablement &amp; Competitive Intel</div>
+  <div class="link-grid">
+    <a class="link-card" href="https://pi-enablement.quick.shopify.io" target="_blank">
+      <div class="link-title">PI Enablement</div>
+      <div class="link-desc">Product intelligence enablement — one-pagers, pitch decks, and battle cards</div>
+    </a>
+    <a class="link-card" href="https://docs.google.com/presentation/d/10FVY-KfETK-N1NRpDHYfsRNf9TNzupDRIDyTlu-9Xyc/edit" target="_blank">
+      <div class="link-title">SFCC Competitive Pitch Deck</div>
+      <div class="link-desc">Competitive positioning against Salesforce Commerce Cloud</div>
+    </a>
+    <a class="link-card" href="https://partner360view.quick.shopify.io/" target="_blank">
+      <div class="link-title">Partner 360 View</div>
+      <div class="link-desc">See partner relationships and ecosystem context for an account</div>
+    </a>
+    <a class="link-card" href="https://sp-tracker.quick.shopify.io/" target="_blank">
+      <div class="link-title">Shopify Payments Tracker</div>
+      <div class="link-desc">Track Shopify Payments adoption and status across accounts</div>
+    </a>
+  </div>
+
+  <div class="link-section-label">Help &amp; Support Channels</div>
+  <div class="link-grid">
+    <a class="link-card" href="https://shopify.slack.com/archives/C0AFMTNGNMU" target="_blank">
+      <div class="link-title">#help-crm</div>
+      <div class="link-desc">CRM Hub questions — sequences, dialer, email, contacts, accounts</div>
+    </a>
+    <a class="link-card" href="https://shopify.slack.com/archives/C97UDFDT9" target="_blank">
+      <div class="link-title">#help-salesforce</div>
+      <div class="link-desc">Salesforce bugs, CPQ issues, OrgID mismatches</div>
+    </a>
+    <a class="link-card" href="https://shopify.slack.com/archives/C07V90WJXGC" target="_blank">
+      <div class="link-title">#revenue-ai-use-cases</div>
+      <div class="link-desc">AI tools built by the sales community — new tools shared regularly</div>
+    </a>
+    <a class="link-card" href="https://shopify.slack.com/archives/C0AH643PQLX" target="_blank">
+      <div class="link-title">#sdr-open-forum</div>
+      <div class="link-desc">Cross-team SDR community — tips, wins, and shared learnings</div>
+    </a>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
